@@ -137,12 +137,12 @@ a {
   padding-top: 112px;
   padding-bottom: 90px;
 
+  text-align: center;
+
   background-color: #f9f9f9;
 }
 .section__title {
   margin-bottom: 39px;
-
-  text-align: center;
 
   color: #000000;
 
@@ -168,8 +168,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -437,6 +435,8 @@ template {
 
 @media (max-width: 992px) {
   .experience__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;

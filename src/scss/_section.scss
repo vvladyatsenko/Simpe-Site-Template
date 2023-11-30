@@ -1,13 +1,18 @@
 @use "./index" as *;
 
+@mixin text-center {
+  text-align: center;
+}
+
 .section {
   padding-top: 112px;
   padding-bottom: 90px;
   background-color: $color-tertiary;
 
+  @include text-center;
+
   &__title {
     color: $color-black;
-    text-align: center;
     font-size: 2rem;
     font-weight: 500;
     margin-bottom: 39px;
@@ -15,8 +20,8 @@
 
   &__description {
     color: $color-secondary;
-    text-align: center;
     font-weight: 400;
     line-height: $line-height-lg;
+    @include text-center;
   }
 }
