@@ -1,0 +1,80 @@
+@use "./index" as *;
+
+.header {
+  padding-top: 66px;
+  padding-bottom: 100px;
+  background-color: $color-light-grey;
+}
+
+.navbar {
+  margin-bottom: 134px;
+
+  @media (max-width: 991.8px) {
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    display: flex;
+    column-gap: 43px;
+
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__link {
+    color: $color-black;
+    line-height: $line-height-lg;
+    letter-spacing: $letter-spacing;
+    padding: $gap-sm 0;
+    display: block;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  max-width: 540px;
+
+  @media (max-width: 576px) {
+    text-align: center;
+    align-items: center;
+  }
+
+  &_title {
+    color: $color-black;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: $line-height-lg;
+    margin: 0 0 4px;
+
+    @media (max-width: 991.8px) {
+      line-height: $line-height-sm;
+    }
+  }
+
+  &__description {
+    color: $color-secondary;
+    line-height: $line-height-lg;
+    margin-bottom: 26px;
+  }
+
+  &__link {
+    color: $color-white;
+    letter-spacing: $letter-spacing;
+    background-color: $color-primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+    min-width: 225px;
+    min-height: 65px;
+  }
+}

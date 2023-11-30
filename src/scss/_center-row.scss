@@ -1,0 +1,46 @@
+@use "./index" as *;
+
+.experience {
+  background-color: $color-primary;
+  color: $color-white;
+  padding: 100px 0 88px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: $gap;
+
+    @media (max-width: 992px) {
+      justify-content: center;
+    }
+
+    .experience-item {
+      flex-basis: 25%;
+    }
+  }
+
+  .experience-item {
+    display: flex;
+    gap: $gap;
+
+    @media (max-width: 991.8px) {
+      flex-basis: 25%;
+    }
+
+    &__description {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    &__number {
+      font-size: 1.3125rem;
+      font-weight: 500;
+    }
+
+    &__img {
+      order: -1;
+    }
+  }
+}

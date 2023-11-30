@@ -1,0 +1,16 @@
+@use "./index" as *;
+
+.video {
+  padding-bottom: 100px;
+  background-color: $color-tertiary;
+
+  &__iframe {
+    height: 600px;
+    width: 100%;
+    border: 0;
+
+    @media (max-width: 991.8px) {
+      height: 300px;
+    }
+  }
+}

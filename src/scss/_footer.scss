@@ -1,0 +1,18 @@
+@use "./index" as *;
+
+.footer {
+  background-color: $color-primary;
+  padding: 40px 0;
+  color: $color-white;
+
+  &_name {
+    font-size: 1.3125rem;
+    font-weight: 500;
+  }
+
+  &_copy {
+    color: $color-white;
+    font-size: 0.8125rem;
+    line-height: $line-height-lg;
+  }
+}
