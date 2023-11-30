@@ -8,7 +8,6 @@
   padding-top: 112px;
   padding-bottom: 90px;
   background-color: $color-tertiary;
-
   @include text-center;
 
   &__title {
@@ -22,6 +21,6 @@
     color: $color-secondary;
     font-weight: 400;
     line-height: $line-height-lg;
-    @include text-center;
+    @include text-center; 
   }
 }
